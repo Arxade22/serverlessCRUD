@@ -9,11 +9,11 @@ const addTask = async(event) => {
     const id = v4(); 
 
     const newTask = {
-        id,
-        title,
-        description,
-        createdAt,
-        done: false 
+        id : id,
+        titulo : title,
+        descripcion : description,
+        fechaCrea: createdAt,
+        actualizado: false 
     }
 
     await dynamodb.put({

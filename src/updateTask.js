@@ -8,7 +8,7 @@ const updateTask = async (event) => {
     await dynamodb.update({
         TableName: 'TaskTable',
         Key: {id},
-        UpdateExpression: 'set done = :done , title = :title , description = :description',
+        UpdateExpression: 'set actualizado = :done , titulo = :title , descripcion = :description',
         ExpressionAttributeValues:{
             ":done":done,
             ":title":title,

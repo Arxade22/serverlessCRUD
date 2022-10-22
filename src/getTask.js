@@ -8,6 +8,7 @@ const getTasks = async (event) => {
      }).promise()
 
     const tasks = result.Items;
+    console.log(tasks)
 
     return {
         status: 200,
